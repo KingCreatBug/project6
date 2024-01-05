@@ -17,3 +17,157 @@ body {
     font-size: 1.6rem;
     font-family: "DM Sans", sans-serif;
 }
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 17rem;
+    height: 6.2rem;
+    background: #5d3bee;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 6.2rem;
+    border-radius: 10px;
+}
+
+/* Header */
+.header {
+    background: #fbfaff;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 135px;
+    padding-top: 2px;
+}
+
+.header-top__mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #5c3bee65;
+}
+
+.header-box__mail-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.header-top__mail--link {
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration-line: underline;
+}
+
+.header-top__logo {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.navbar-list {
+    display: flex;
+    column-gap: 4.3rem;
+}
+
+.navbar-link {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.4rem;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__media::after {
+    position: absolute;
+    top: -80px;
+    left: -215px;
+    content: url(../img/hero-bg1.png);
+}
+
+.hero__media-images {
+    display: block;
+    width: 51.4rem;
+    height: 70.5rem;
+    object-fit: cover;
+}
+
+.hero__content {
+    position: relative;
+}
+
+.hero__content::after {
+    position: absolute;
+    right: -165px;
+    bottom: -93px;
+    content: url(../img/hero-bg2.png);
+}
+
+.hero__content--title {
+    width: 50rem;
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.32rem;
+}
+
+.hero__content--desc {
+    margin-top: 2rem;
+    width: 37rem;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero__action {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    margin-top: 5rem;
+}
+
+.hero__action--link {
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    text-decoration-line: underline;
+}
+
+.hero__social {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 10.9rem;
+}
