@@ -89,175 +89,214 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
             rel="stylesheet"
         />
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Grid css -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
+        <!-- Responsive css -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Style css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Mình là Trung</title>
     </head>
     <body>
+        <!-- Header -->
+
+        <!-- Header pc -->
         <header class="header">
-            <div class="top">
-                <!-- Mail -->
-                <div class="top__mail">
-                    <div class="top-box">
-                        <img
-                            src="./assets/icon/mail-icon.png"
-                            alt=""
-                            class="top-box__mail-icon"
-                        />
-                    </div>
-                    <a
-                        href="mailto:trunghoang.240500@gmail.com"
-                        class="top__mail--link"
-                        >trunghoang.240500@gmail.com</a
-                    >
-                </div>
-                <!-- Logo -->
-                <a href="#">
-                    <img
-                        src="./assets/img/logo.png"
-                        alt="Trung Logo"
-                        class="top__logo"
-                    />
-                </a>
+            <div class="container">
                 <nav class="navbar">
+                    <!-- Tablet & mobile menu -->
+                    <label for="" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="16"
+                            width="14"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <!-- Mail -->
+                    <div class="mail">
+                        <div class="mail__box">
+                            <img
+                                src="./assets/icon/mail-icon.png"
+                                alt=""
+                                class="mail__icon"
+                            />
+                        </div>
+                        <a
+                            href="mailto:trunghoang.240500@gmail.com"
+                            class="mail__box--link"
+                            >trunghoang.240500@gmail.com</a
+                        >
+                    </div>
+                    <!-- Logo -->
+                    <a href="#">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt="Trung Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <!-- Navigator -->
                     <ul class="navbar-list">
-                        <li class="navbar-item">
+                        <li>
                             <a href="#project" class="navbar-link">Projects</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#journey" class="navbar-link">Journey</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#service" class="navbar-link">Service</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#contact" class="navbar-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="container">
-                <section class="hero">
-                    <div class="hero__media">
-                        <img
-                            src="./assets/img/hero-img.png"
-                            alt=""
-                            class="hero__media-images"
-                        />
-                    </div>
-                    <section class="hero__content">
-                        <h1 class="hero__content--title">
-                            An Interactive Designer
-                        </h1>
-                        <p class="section-desc hero__content--desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. In urna, non nisl tincidunt ut elementum
-                            turpis.
-                        </p>
-                        <div class="hero__action">
-                            <a href="#!" class="btn">Book a Call</a>
-                            <a href="#!" class="hero__action--link">My Works</a>
-                        </div>
-                        <div class="hero__social">
-                            <p class="hero__social--sub-title">Follow me on:</p>
-                            <a href="#!">
-                                <img
-                                    src="./assets/icon/hero-social-icon.png"
-                                    alt=""
-                                    class="hero__social--icon"
-                                />
-                            </a>
-                        </div>
-                    </section>
-                </section>
-            </div>
         </header>
         <main>
-            <div class="container">
-                <!-- Company -->
-                <section class="company">
-                    <section class="company__title">
-                        Meet my recent clients
-                    </section>
-                    <div class="company__social">
-                        <!-- Company box 1 -->
-                        <div class="company-box">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__media">
                             <img
-                                src="./assets/icon/company-icon1.svg"
+                                src="./assets/img/hero-img.png"
                                 alt=""
-                                class="company__img"
+                                class="hero__media-images"
                             />
-                            <p class="company__name">Google</p>
                         </div>
-                        <!-- Company box 2 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon2.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Warner Bros</p>
-                        </div>
-                        <!-- Company box 3 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon3.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Mailchimp</p>
-                        </div>
-                        <!-- Company box 4 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon4.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Adobe</p>
-                        </div>
-                        <!-- Company box 5 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon5.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Upwork</p>
-                        </div>
-                        <!-- Company box 6 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon6.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Creative Cloud</p>
-                        </div>
-                        <!-- Company box 7 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon7.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Woocommerce</p>
-                        </div>
-                        <!-- Company box 8 -->
-                        <div class="company-box">
-                            <img
-                                src="./assets/icon/company-icon8.svg"
-                                alt=""
-                                class="company__img"
-                            />
-                            <p class="company__name">Canva</p>
+                        <section class="hero__content">
+                            <h1 class="hero__content--title">
+                                An Interactive Designer
+                            </h1>
+                            <p class="section-desc hero__content--desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <div class="hero__action">
+                                <a href="#!" class="btn">Book a Call</a>
+                                <a href="#!" class="hero__action--link"
+                                    >My Works</a
+                                >
+                            </div>
+                            <div class="hero__social">
+                                <p class="hero__social--sub-title">
+                                    Follow me on:
+                                </p>
+                                <a href="#!">
+                                    <img
+                                        src="./assets/icon/hero-social-icon.png"
+                                        alt=""
+                                        class="hero__social--icon"
+                                    />
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Company -->
+            <section class="company">
+                <div class="container">
+                    <div class="company__inner">
+                        <section class="company__title">
+                            Meet my recent clients
+                        </section>
+                        <div class="company__social">
+                            <!-- Company box 1 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon1.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Google</p>
+                            </div>
+                            <!-- Company box 2 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon2.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Warner Bros</p>
+                            </div>
+                            <!-- Company box 3 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon3.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Mailchimp</p>
+                            </div>
+                            <!-- Company box 4 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon4.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Adobe</p>
+                            </div>
+                            <!-- Company box 5 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon5.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Upwork</p>
+                            </div>
+                            <!-- Company box 6 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon6.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Creative Cloud</p>
+                            </div>
+                            <!-- Company box 7 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon7.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Woocommerce</p>
+                            </div>
+                            <!-- Company box 8 -->
+                            <div class="company-box">
+                                <img
+                                    src="./assets/icon/company-icon8.svg"
+                                    alt=""
+                                    class="company__img"
+                                />
+                                <p class="company__name">Canva</p>
+                            </div>
                         </div>
                     </div>
-                </section>
-                <!-- Service -->
-                <section id="service" class="service">
+                </div>
+            </section>
+            <!-- Service -->
+            <section id="service" class="service">
+                <div class="container">
                     <section class="service__content">
                         <h2 class="section-heading">Specialities</h2>
                         <p class="section-desc service__content--desc">
@@ -267,9 +306,9 @@
                         </p>
                     </section>
                     <div class="service__group">
-                        <div class="row row-cols-3">
+                        <div class="row">
                             <!-- Service box 1 -->
-                            <div class="col">
+                            <div class="col-4 .col-sm-1">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon1.png"
@@ -287,7 +326,7 @@
                                 </div>
                             </div>
                             <!-- Service box 2 -->
-                            <div class="col">
+                            <div class="col-4">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon2.png"
@@ -305,7 +344,7 @@
                                 </div>
                             </div>
                             <!-- Service box 3 -->
-                            <div class="col">
+                            <div class="col-4 .col-sm-1">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon3.png"
@@ -324,8 +363,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <!-- project -->
             <section id="project" class="project">
                 <div class="container">
@@ -469,9 +508,6 @@
                         </div>
                     </div>
                     <a href="#!" class="btn project__cta">All Projects</a>
-                </div>
-                <div class="row">
-                    <div class="col-2 offset-5"></div>
                 </div>
             </section>
             <!-- About -->
@@ -811,88 +847,87 @@
                 </div>
             </section>
             <!-- Contact -->
-            <div id="contact" class="contact-wrap">
-                <section class="contact">
-                    <img src="./assets/icon/contact-icon.png" alt="" />
-                    <h2 class="section-heading contact__title">
-                        Got a project? Let's talk
-                    </h2>
-                    <p class="section-desc contact__desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quas fugit, tenetur excepturi accusamus obcaecati
-                        voluptate odio.
-                    </p>
-                    <a href="tel:0823240040" class="btn contact__btn"
-                        >Book a Call</a
-                    >
-                    <img
-                        src="./assets/img/contact-bg-l.png"
-                        alt=""
-                        class="contact__bg--left"
-                    />
-                    <img
-                        src="./assets/img/contact-bg-ct.png"
-                        alt=""
-                        class="contact__bg--center"
-                    />
-                    <img
-                        src="./assets/img/contact-bg-r.png"
-                        alt=""
-                        class="contact__bg--right"
-                    />
-                </section>
-            </div>
+            <section class="contact">
+                <img src="./assets/icon/contact-icon.png" alt="" />
+                <h2 class="section-heading contact__title">
+                    Got a project? Let's talk
+                </h2>
+                <p class="section-desc contact__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas fugit, tenetur excepturi accusamus obcaecati voluptate
+                    odio.
+                </p>
+                <a href="tel:0823240040" class="btn contact__btn"
+                    >Book a Call</a
+                >
+                <img
+                    src="./assets/img/contact-bg-l.png"
+                    alt=""
+                    class="contact__bg--left"
+                />
+                <img
+                    src="./assets/img/contact-bg-ct.png"
+                    alt=""
+                    class="contact__bg--center"
+                />
+                <img
+                    src="./assets/img/contact-bg-r.png"
+                    alt=""
+                    class="contact__bg--right"
+                />
+            </section>
         </main>
         <!-- Footer -->
         <footer class="footer">
-            <div class="top">
-                <!-- Mail -->
-                <div class="top__mail">
-                    <div class="top-box">
-                        <img
-                            src="./assets/icon/mail-icon.png"
-                            alt=""
-                            class="top-box__mail-icon"
-                        />
-                    </div>
-                    <a
-                        href="mailto:trunghoang.240500@gmail.com"
-                        class="top__mail--link"
-                        >trunghoang.240500@gmail.com</a
-                    >
-                </div>
-                <!-- Logo -->
-                <a href="#">
-                    <img
-                        src="./assets/img/logo.png"
-                        alt="Trung Logo"
-                        class="top__logo"
-                    />
-                </a>
+            <div class="container-fluid">
                 <nav class="navbar">
+                    <!-- Mail -->
+                    <div class="mail">
+                        <div class="mail__box">
+                            <img
+                                src="./assets/icon/mail-icon.png"
+                                alt=""
+                                class="mail__icon"
+                            />
+                        </div>
+                        <a
+                            href="mailto:trunghoang.240500@gmail.com"
+                            class="mail__box--link"
+                            >trunghoang.240500@gmail.com</a
+                        >
+                    </div>
+                    <!-- Logo -->
+                    <a href="#">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt="Trung Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <!-- Navigator -->
                     <ul class="navbar-list">
-                        <li class="navbar-item">
+                        <li>
                             <a href="#project" class="navbar-link">Projects</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#journey" class="navbar-link">Journey</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#service" class="navbar-link">Service</a>
                         </li>
-                        <li class="navbar-item">
+                        <li>
                             <a href="#contact" class="navbar-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="copyright">
-                <p class="copyright__left">
-                    ©interactiveArif 2021. All rights reserved.
-                </p>
-                <div class="copyright__right">
-                    <p class="copyright__right--text">Privacy Policy</p>
-                    <p>Terms of Conditions</p>
+                <div class="copyright">
+                    <p class="copyright__left">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+                    <div class="copyright__right">
+                        <p class="copyright__right--text">Privacy Policy</p>
+                        <p>Terms of Conditions</p>
+                    </div>
                 </div>
             </div>
         </footer>
