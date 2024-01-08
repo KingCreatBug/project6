@@ -16,6 +16,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "DM Sans", sans-serif;
+    cursor: default;
 }
 
 /* Common */
@@ -56,12 +57,7 @@ a {
     line-height: 1.67;
 }
 
-/* Header */
-.header {
-    background: #fbfaff;
-}
-
-.header-top {
+.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,13 +65,13 @@ a {
     padding-top: 2px;
 }
 
-.header-top__mail {
+.top__mail {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.header-box {
+.top-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,13 +81,13 @@ a {
     border: 1px solid #5c3bee65;
 }
 
-.header-box__mail-icon {
+.top-box__mail-icon {
     width: 24px;
     height: 16px;
     object-fit: cover;
 }
 
-.header-top__mail--link {
+.top__mail--link {
     color: #080415;
     font-size: 2.2rem;
     font-weight: 500;
@@ -99,7 +95,7 @@ a {
     text-decoration-line: underline;
 }
 
-.header-top__logo {
+.top__logo {
     width: 10rem;
     height: 10rem;
     object-fit: cover;
@@ -114,6 +110,11 @@ a {
     color: #51586a;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* Header */
+.header {
+    background: #fbfaff;
 }
 
 /* Hero */
@@ -229,6 +230,12 @@ a {
     display: flex;
     align-items: center;
     column-gap: 1.3rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.company-box:hover {
+    transform: scale(1.3);
 }
 
 .company__img {
@@ -502,7 +509,7 @@ a {
 
 .intro-video {
     position: absolute;
-    right: 10px;
+    right: 33px;
     bottom: 10px;
     width: 17rem;
     height: 6.2rem;
@@ -510,6 +517,7 @@ a {
     align-items: center;
     justify-content: center;
     background: #fff;
+    cursor: pointer;
 }
 
 .intro-video__text {
@@ -517,7 +525,6 @@ a {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.67;
-    cursor: pointer;
 }
 
 .review__content {
@@ -583,37 +590,346 @@ a {
     line-height: 1.81;
 }
 
-.review__cta--box {
+.review__radio-input {
     display: flex;
-    justify-content: center;
-    column-gap: 1.1rem;
     margin-top: 4rem;
 }
 
-.cta__item {
-    width: 2rem;
-    height: 2rem;
+.review-input {
+    appearance: none;
+    /* Xóa mặc định của input */
+    display: block;
+    margin: 10px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background: #ccc;
     cursor: pointer;
+    vertical-align: middle;
+    box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px,
+        inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    background-image: -webkit-radial-gradient(
+        rgb(159, 44, 217) 25%,
+        hsla(305, 71%, 63%, 0.3) 28%,
+        hsla(290, 82%, 33%, 0) 70%
+    );
+    background-repeat: no-repeat;
+    transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1),
+        transform 0.25s cubic-bezier(0.8, 0, 1, 1);
+    outline: none;
 }
 
-.cta__item--active {
+.review-input:checked {
+    transition: background-position 0.2s 0.15s cubic-bezier(0, 0, 0.2, 1),
+        transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+    background-position: 0 0;
+}
+
+.review-input:active {
+    transform: scale(1.5);
+    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.review-input,
+.review-input:active {
+    background-position: 0 24px;
+}
+
+.review-input:checked ~ .review-input,
+.review-input:checked ~ .review-input:active {
+    background-position: 0 -24px;
+}
+
+/* Faq */
+.faq {
+    margin-top: 9.5rem;
+}
+
+.faq__heading {
+    width: 50%;
+}
+
+.faq__quest {
+    margin: 80px 160px 0 0;
+}
+
+.faq__group {
     position: relative;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #5d3bee;
+    margin-top: 60px;
 }
 
-.cta__item--active::after {
+.faq__input {
+    font-size: 16px;
+    padding: 60px 0 33px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #08182f;
+    background: transparent;
+}
+
+.faq__input:focus {
+    outline: none;
+    border-bottom: none;
+}
+
+.faq__label {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.128rem;
     position: absolute;
-    top: 2.6px;
-    left: 2.6px;
-    width: 1.3rem;
-    height: 1.3rem;
-    border-radius: 50%;
-    background: #5d3bee;
+    pointer-events: none;
+    left: 22px;
+    top: 50px;
+    transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+.faq__input[type="text"] {
+    padding-left: 22px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.faq__input:focus ~ .faq__label,
+.faq__ .faq__input:valid ~ .faq__label {
+    top: -10px;
+    color: #5d3bee;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
     content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5d3bee;
+    transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.faq__input:focus ~ .bar:before,
+.faq__input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.faq__input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* Hide the default checkbox */
+.form__box .form__box--check {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.faq__box {
+    position: absolute;
+    bottom: 11px;
+    right: 0;
+    transition: 0.25s;
+}
+
+.form__box {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(216, 216, 216, 0.603);
+}
+
+.form__box:hover {
+    background: rgba(197, 197, 197, 0.527);
+}
+
+.line {
+    width: calc(100% - 20px);
+    height: 3px;
+    left: 10px;
+    background: rgb(58, 58, 58);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.7s transform cubic-bezier(0, 1, 0.33, 1.2), background 0.4s;
+}
+
+.line-indicator {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.form__box .form__box--check:checked ~ .line-indicator {
+    transform: translateY(-50%);
+}
+
+.form__item--active .form__input {
+    width: 48.7rem;
+    display: block;
+    margin-top: 2.3rem;
+    border: none;
+    outline: none;
+}
+
+.faq__input:focus ~ .faq__box {
+    bottom: 56px;
+}
+
+/* Gallery */
+.gallery {
+    margin-top: 16rem;
+}
+
+.gallery__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__content--desc {
+    width: 47%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.gallery__content--link {
+    margin-top: 3rem;
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.128rem;
+    text-decoration-line: underline;
+}
+
+.gallery__group {
+    margin-top: 7rem;
+}
+
+.gallery-img {
+    width: 37rem;
+    height: 52.9rem;
+    object-fit: cover;
+}
+
+/* Contact */
+.contact-wrap {
+    width: 133rem;
+    margin: 0 auto;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.8rem 0;
+    margin-top: 14rem;
+    background: #fbfaff;
+}
+
+.contact__title {
+    margin-top: 2.7rem;
+}
+
+.contact__desc {
+    width: 50%;
+    margin: 2.8rem 0 3.8rem;
+    text-align: center;
+}
+
+.contact__btn {
+    z-index: 1;
+}
+
+.contact__bg--left,
+.contact__bg--center,
+.contact__bg--right {
+    position: absolute;
+}
+
+.contact__bg--left {
+    left: 0;
+    bottom: 0;
+}
+
+.contact__bg--center {
+    top: 0;
+    left: 140px;
+}
+
+.contact__bg--right {
+    top: 0;
+    right: 0;
+}
+
+/* Footer */
+.footer {
+    margin: 5rem 0;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 129px;
+    margin: 32px 86px 36px;
+    border-top: 1px solid #0c07204c;
+}
+
+.copyright__left,
+.copyright__right {
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    opacity: 0.6;
+}
+
+.copyright__right {
+    display: flex;
+    column-gap: 46px;
+    letter-spacing: -0.054rem;
+}
+
+.copyright__right--text {
+    position: relative;
+}
+
+.copyright__right--text::after {
+    position: absolute;
+    top: 8px;
+    right: -23px;
+    content: "";
+    width: 1%;
+    height: 14px;
+    background: #525771;
+    opacity: 0.6;
 }

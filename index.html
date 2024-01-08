@@ -97,41 +97,43 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-top">
+            <div class="top">
                 <!-- Mail -->
-                <div class="header-top__mail">
-                    <div class="header-box">
+                <div class="top__mail">
+                    <div class="top-box">
                         <img
                             src="./assets/icon/mail-icon.png"
                             alt=""
-                            class="header-box__mail-icon"
+                            class="top-box__mail-icon"
                         />
                     </div>
                     <a
                         href="mailto:trunghoang.240500@gmail.com"
-                        class="header-top__mail--link"
+                        class="top__mail--link"
                         >trunghoang.240500@gmail.com</a
                     >
                 </div>
                 <!-- Logo -->
-                <img
-                    src="./assets/img/logo.png"
-                    alt="Trung Logo"
-                    class="header-top__logo"
-                />
+                <a href="#">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt="Trung Logo"
+                        class="top__logo"
+                    />
+                </a>
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="#!" class="navbar-link">Projects</a>
+                            <a href="#project" class="navbar-link">Projects</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#!" class="navbar-link">Journey</a>
+                            <a href="#journey" class="navbar-link">Journey</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#!" class="navbar-link">Service</a>
+                            <a href="#service" class="navbar-link">Service</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#!" class="navbar-link">Contact</a>
+                            <a href="#contact" class="navbar-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -160,19 +162,21 @@
                         </div>
                         <div class="hero__social">
                             <p class="hero__social--sub-title">Follow me on:</p>
-                            <img
-                                src="./assets/icon/hero-social-icon.png"
-                                alt=""
-                                class="hero__social--icon"
-                            />
+                            <a href="#!">
+                                <img
+                                    src="./assets/icon/hero-social-icon.png"
+                                    alt=""
+                                    class="hero__social--icon"
+                                />
+                            </a>
                         </div>
                     </section>
                 </section>
             </div>
         </header>
-        <main style="height: 10000px">
-            <!-- Company -->
+        <main>
             <div class="container">
+                <!-- Company -->
                 <section class="company">
                     <section class="company__title">
                         Meet my recent clients
@@ -253,7 +257,7 @@
                     </div>
                 </section>
                 <!-- Service -->
-                <section class="service">
+                <section id="service" class="service">
                     <section class="service__content">
                         <h2 class="section-heading">Specialities</h2>
                         <p class="section-desc service__content--desc">
@@ -323,7 +327,7 @@
                 </section>
             </div>
             <!-- project -->
-            <section class="project">
+            <section id="project" class="project">
                 <div class="container">
                     <section class="project__content">
                         <h1 class="section-heading project__content--title">
@@ -504,7 +508,7 @@
                 </section>
             </div>
             <!-- Review -->
-            <section class="review">
+            <section id="journey" class="review">
                 <div class="container">
                     <div class="review__video">
                         <video
@@ -597,39 +601,300 @@
                                 User Interface Design at PCL Lab
                             </p>
                         </section>
-                        <div class="review__cta--box">
-                            <div class="cta__item"></div>
-                            <div class="cta__item"></div>
-                            <div class="cta__item--active"></div>
-                            <div class="cta__item"></div>
-                            <div class="cta__item"></div>
+                        <div class="review__radio-input">
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="review-input"
+                            />
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="review-input"
+                            />
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="review-input"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="review-input"
+                            />
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="review-input"
+                            />
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Faq -->
             <section class="faq">
-                <section class="faq__title"></section>
-                <section class="faq__quest"></section>
+                <div class="container">
+                    <h2 class="section-heading faq__heading">
+                        A few questions <br />
+                        clients normally ask me
+                    </h2>
+                    <section class="faq__quest">
+                        <form action="">
+                            <!-- Form item 1 -->
+                            <div class="faq__group">
+                                <input
+                                    required=""
+                                    type="text"
+                                    class="faq__input"
+                                />
+                                <span class="bar"></span>
+                                <label class="faq__label"
+                                    >What is your hourly rate?</label
+                                >
+                                <div class="faq__box">
+                                    <label class="form__box">
+                                        <input
+                                            class="form__box--check"
+                                            type="checkbox"
+                                            checked="checked"
+                                        />
+                                        <div class="line"></div>
+                                        <div class="line line-indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- form item 2 -->
+                            <div class="faq__group">
+                                <input
+                                    required=""
+                                    type="text"
+                                    class="faq__input"
+                                />
+                                <span class="bar"></span>
+                                <label class="faq__label"
+                                    >What type of projects do you take
+                                    on?</label
+                                >
+                                <div class="faq__box">
+                                    <label class="form__box">
+                                        <input
+                                            class="form__box--check"
+                                            type="checkbox"
+                                            checked="checked"
+                                        />
+                                        <div class="line"></div>
+                                        <div class="line line-indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- form item 3 -->
+                            <div class="faq__group">
+                                <input
+                                    required=""
+                                    type="text"
+                                    class="faq__input"
+                                />
+                                <span class="bar"></span>
+                                <label class="faq__label"
+                                    >How do you charge for projects ?</label
+                                >
+                                <div class="faq__box">
+                                    <label class="form__box">
+                                        <input
+                                            class="form__box--check"
+                                            type="checkbox"
+                                            checked="checked"
+                                        />
+                                        <div class="line"></div>
+                                        <div class="line line-indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- form item 4 -->
+                            <div class="faq__group">
+                                <input
+                                    required=""
+                                    type="text"
+                                    class="faq__input"
+                                />
+                                <span class="bar"></span>
+                                <label class="faq__label"
+                                    >What time-zone do you work in?</label
+                                >
+                                <div class="faq__box">
+                                    <label class="form__box">
+                                        <input
+                                            class="form__box--check"
+                                            type="checkbox"
+                                            checked="checked"
+                                        />
+                                        <div class="line"></div>
+                                        <div class="line line-indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- form item 5 -->
+                            <div class="faq__group">
+                                <input
+                                    required=""
+                                    type="text"
+                                    class="faq__input"
+                                />
+                                <span class="bar"></span>
+                                <label class="faq__label"
+                                    >How often can we communicate?</label
+                                >
+                                <div class="faq__box">
+                                    <label class="form__box">
+                                        <input
+                                            class="form__box--check"
+                                            type="checkbox"
+                                            checked="checked"
+                                        />
+                                        <div class="line"></div>
+                                        <div class="line line-indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </section>
             <!-- Gallery -->
             <section class="gallery">
-                <section class="gallery__content"></section>
-                <div class="gallery__group">
-                    <div class="row-cols-3">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                <div class="container">
+                    <section class="gallery__content">
+                        <h2 class="section-heading">My atmosphere</h2>
+                        <p class="section-desc gallery__content--desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a
+                            href="mailto:trunghoang.240500@gmail.com"
+                            class="gallery__content--link"
+                            >@interaction_arif</a
+                        >
+                    </section>
+                    <div class="gallery__group">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/gallery-img1.png"
+                                        alt=""
+                                        class="gallery-img"
+                                    />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/gallery-img2.png"
+                                        alt=""
+                                        class="gallery-img"
+                                    />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/gallery-img3.png"
+                                        alt=""
+                                        class="gallery-img"
+                                    />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- Contact -->
-            <section class="contact"></section>
+            <div id="contact" class="contact-wrap">
+                <section class="contact">
+                    <img src="./assets/icon/contact-icon.png" alt="" />
+                    <h2 class="section-heading contact__title">
+                        Got a project? Let's talk
+                    </h2>
+                    <p class="section-desc contact__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quas fugit, tenetur excepturi accusamus obcaecati
+                        voluptate odio.
+                    </p>
+                    <a href="tel:0823240040" class="btn contact__btn"
+                        >Book a Call</a
+                    >
+                    <img
+                        src="./assets/img/contact-bg-l.png"
+                        alt=""
+                        class="contact__bg--left"
+                    />
+                    <img
+                        src="./assets/img/contact-bg-ct.png"
+                        alt=""
+                        class="contact__bg--center"
+                    />
+                    <img
+                        src="./assets/img/contact-bg-r.png"
+                        alt=""
+                        class="contact__bg--right"
+                    />
+                </section>
+            </div>
         </main>
         <!-- Footer -->
         <footer class="footer">
-            <nav class="navbar"></nav>
-            <div class="container"></div>
+            <div class="top">
+                <!-- Mail -->
+                <div class="top__mail">
+                    <div class="top-box">
+                        <img
+                            src="./assets/icon/mail-icon.png"
+                            alt=""
+                            class="top-box__mail-icon"
+                        />
+                    </div>
+                    <a
+                        href="mailto:trunghoang.240500@gmail.com"
+                        class="top__mail--link"
+                        >trunghoang.240500@gmail.com</a
+                    >
+                </div>
+                <!-- Logo -->
+                <a href="#">
+                    <img
+                        src="./assets/img/logo.png"
+                        alt="Trung Logo"
+                        class="top__logo"
+                    />
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#project" class="navbar-link">Projects</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#journey" class="navbar-link">Journey</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#service" class="navbar-link">Service</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#contact" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">
+                <p class="copyright__left">
+                    ©interactiveArif 2021. All rights reserved.
+                </p>
+                <div class="copyright__right">
+                    <p class="copyright__right--text">Privacy Policy</p>
+                    <p>Terms of Conditions</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
