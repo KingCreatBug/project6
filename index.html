@@ -108,9 +108,8 @@
     <body>
         <!-- Header -->
 
-        <!-- Header pc -->
         <header class="header">
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar">
                     <!-- Tablet & mobile menu -->
                     <label for="" class="toggle-menu">
@@ -170,7 +169,7 @@
         <main>
             <!-- Hero -->
             <section class="hero">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="hero__inner">
                         <div class="hero__media">
                             <img
@@ -298,7 +297,9 @@
             <section id="service" class="service">
                 <div class="container">
                     <section class="service__content">
-                        <h2 class="section-heading">Specialities</h2>
+                        <h2 class="section-heading service__mobile--heading">
+                            Specialities
+                        </h2>
                         <p class="section-desc service__content--desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
@@ -306,9 +307,9 @@
                         </p>
                     </section>
                     <div class="service__group">
-                        <div class="row">
+                        <div class="row hidden__tablet-mobile">
                             <!-- Service box 1 -->
-                            <div class="col-4 .col-sm-1">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon1.png"
@@ -326,7 +327,7 @@
                                 </div>
                             </div>
                             <!-- Service box 2 -->
-                            <div class="col-4">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon2.png"
@@ -344,7 +345,7 @@
                                 </div>
                             </div>
                             <!-- Service box 3 -->
-                            <div class="col-4 .col-sm-1">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                 <div class="service-box">
                                     <img
                                         src="./assets/icon/ser-icon3.png"
@@ -380,9 +381,9 @@
                         </p>
                     </section>
                     <div class="project__group">
-                        <div class="row row-cols-2">
+                        <div class="row">
                             <!-- Project 1 -->
-                            <div class="col">
+                            <div class="col-12 col-lg-6 col-md-12">
                                 <article class="project-box">
                                     <section class="project-box__content">
                                         <h3>
@@ -413,7 +414,7 @@
                                 </article>
                             </div>
                             <!-- Project 2 -->
-                            <div class="col">
+                            <div class="col-12 col-lg-6 col-md-12">
                                 <article class="project-box">
                                     <section class="project-box__content">
                                         <h3>
@@ -444,7 +445,7 @@
                                 </article>
                             </div>
                             <!-- Project box 3 -->
-                            <div class="col">
+                            <div class="col-12 col-lg-6 col-md-12">
                                 <article class="project-box">
                                     <section class="project-box__content">
                                         <h3>
@@ -475,7 +476,7 @@
                                 </article>
                             </div>
                             <!-- Project box 4 -->
-                            <div class="col">
+                            <div class="col-12 col-lg-6 col-md-12">
                                 <article class="project-box">
                                     <section class="project-box__content">
                                         <h3>
@@ -517,7 +518,9 @@
                         <p class="about__content--sub-title">
                             Hey,,,,It’s Arif
                         </p>
-                        <h2 class="section-heading">Interactive Designer</h2>
+                        <h2 class="section-heading about__content--title">
+                            Interactive Designer
+                        </h2>
                         <p class="section-desc about__content--desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
@@ -550,67 +553,13 @@
                         <video
                             src="./assets/video/review-video.mp4"
                             class="video"
+                            controls
                         ></video>
-                        <div class="play-video">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="111"
-                                height="111"
-                                viewBox="0 0 111 111"
-                                fill="none"
-                            >
-                                <g filter="url(#filter0_b_1_289)">
-                                    <circle
-                                        cx="55.5"
-                                        cy="55.5"
-                                        r="55.5"
-                                        fill="white"
-                                        fill-opacity="0.7"
-                                    />
-                                </g>
-                                <path
-                                    d="M64.4462 56.6965C64.3614 56.7835 64.0414 57.1555 63.7433 57.4615C61.9956 59.386 57.4364 62.536 55.0502 63.4975C54.6878 63.652 53.7716 63.979 53.282 64C52.813 64 52.3658 63.892 51.9391 63.673C51.4072 63.367 50.9805 62.8855 50.7467 62.317C50.5962 61.9225 50.3624 60.742 50.3624 60.721C50.1286 59.4295 50 57.331 50 55.012C50 52.8025 50.1286 50.7895 50.32 49.4785C50.3419 49.4575 50.5757 47.9905 50.8315 47.488C51.3005 46.57 52.2168 46 53.1973 46H53.282C53.9206 46.0225 55.2635 46.5925 55.2635 46.6135C57.5212 47.5765 61.9752 50.572 63.7652 52.5625C63.7652 52.5625 64.2694 53.074 64.4886 53.3935C64.8305 53.8525 65 54.421 65 54.9895C65 55.624 64.8086 56.215 64.4462 56.6965Z"
-                                    fill="#5D3BEE"
-                                />
-                                <defs>
-                                    <filter
-                                        id="filter0_b_1_289"
-                                        x="-24"
-                                        y="-24"
-                                        width="159"
-                                        height="159"
-                                        filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB"
-                                    >
-                                        <feFlood
-                                            flood-opacity="0"
-                                            result="BackgroundImageFix"
-                                        />
-                                        <feGaussianBlur
-                                            in="BackgroundImageFix"
-                                            stdDeviation="12"
-                                        />
-                                        <feComposite
-                                            in2="SourceAlpha"
-                                            operator="in"
-                                            result="effect1_backgroundBlur_1_289"
-                                        />
-                                        <feBlend
-                                            mode="normal"
-                                            in="SourceGraphic"
-                                            in2="effect1_backgroundBlur_1_289"
-                                            result="shape"
-                                        />
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="intro-video">
-                            <p class="intro-video__text">INTRO VIDEO</p>
-                        </div>
                     </div>
                     <section class="review__content">
-                        <h2 class="section-heading">What people says</h2>
+                        <h2 class="section-heading review__content--title">
+                            What people says
+                        </h2>
                         <p class="section-desc review__content--desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
@@ -801,7 +750,9 @@
             <section class="gallery">
                 <div class="container">
                     <section class="gallery__content">
-                        <h2 class="section-heading">My atmosphere</h2>
+                        <h2 class="section-heading gallery__content--heading">
+                            My atmosphere
+                        </h2>
                         <p class="section-desc gallery__content--desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
@@ -814,8 +765,8 @@
                         >
                     </section>
                     <div class="gallery__group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row hidden__tablet-mobile">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <a href="#!">
                                     <img
                                         src="./assets/img/gallery-img1.png"
@@ -824,7 +775,7 @@
                                     />
                                 </a>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <a href="#!">
                                     <img
                                         src="./assets/img/gallery-img2.png"
@@ -833,7 +784,7 @@
                                     />
                                 </a>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <a href="#!">
                                     <img
                                         src="./assets/img/gallery-img3.png"
@@ -848,7 +799,11 @@
             </section>
             <!-- Contact -->
             <section class="contact">
-                <img src="./assets/icon/contact-icon.png" alt="" />
+                <img
+                    src="./assets/icon/contact-icon.png"
+                    alt=""
+                    class="contact__icon"
+                />
                 <h2 class="section-heading contact__title">
                     Got a project? Let's talk
                 </h2>
@@ -864,11 +819,13 @@
                     src="./assets/img/contact-bg-l.png"
                     alt=""
                     class="contact__bg--left"
+                    hidden
                 />
                 <img
                     src="./assets/img/contact-bg-ct.png"
                     alt=""
                     class="contact__bg--center"
+                    hidden
                 />
                 <img
                     src="./assets/img/contact-bg-r.png"
@@ -880,10 +837,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container-fluid">
-                <nav class="navbar">
+                <nav class="navbar footer-navbar">
                     <!-- Mail -->
-                    <div class="mail">
-                        <div class="mail__box">
+                    <div class="mail footer-mail">
+                        <div class="mail__box footer-mail__box">
                             <img
                                 src="./assets/icon/mail-icon.png"
                                 alt=""
@@ -892,7 +849,7 @@
                         </div>
                         <a
                             href="mailto:trunghoang.240500@gmail.com"
-                            class="mail__box--link"
+                            class="mail__box--link footer-mail__box--link"
                             >trunghoang.240500@gmail.com</a
                         >
                     </div>
@@ -901,11 +858,11 @@
                         <img
                             src="./assets/img/logo.png"
                             alt="Trung Logo"
-                            class="logo"
+                            class="logo footer-logo"
                         />
                     </a>
                     <!-- Navigator -->
-                    <ul class="navbar-list">
+                    <ul class="navbar-list footer-navbar-list">
                         <li>
                             <a href="#project" class="navbar-link">Projects</a>
                         </li>
@@ -920,11 +877,11 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="copyright">
-                    <p class="copyright__left">
+                <div class="copyright footer-copyright">
+                    <p class="copyright__left footer-copyright__left">
                         ©interactiveArif 2021. All rights reserved.
                     </p>
-                    <div class="copyright__right">
+                    <div class="copyright__right footer-copyright__right">
                         <p class="copyright__right--text">Privacy Policy</p>
                         <p>Terms of Conditions</p>
                     </div>
