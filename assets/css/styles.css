@@ -125,6 +125,56 @@ a {
     text-shadow: 1px 2px 1px #000;
 }
 
+.radio-input {
+    display: flex;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.input {
+    appearance: none;
+    /* Xóa mặc định của input */
+    display: block;
+    margin: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px,
+        inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    background-image: -webkit-radial-gradient(
+        rgb(159, 44, 217) 25%,
+        hsla(305, 71%, 63%, 0.3) 28%,
+        hsla(290, 82%, 33%, 0) 70%
+    );
+    background-repeat: no-repeat;
+    transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1),
+        transform 0.25s cubic-bezier(0.8, 0, 1, 1);
+    outline: none;
+}
+
+.input:checked {
+    transition: background-position 0.2s 0.15s cubic-bezier(0, 0, 0.2, 1),
+        transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+    background-position: 0 0;
+}
+
+.input:active {
+    transform: scale(1.5);
+    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.input,
+.input:active {
+    background-position: 0 24px;
+}
+
+.input:checked ~ .input,
+.input:checked ~ .input:active {
+    background-position: 0 -24px;
+}
+
 /* Header */
 .header,
 .hero {
@@ -140,8 +190,9 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
+    column-gap: 156px;
 }
 
 .hero__media {
@@ -164,7 +215,7 @@ a {
 }
 
 .hero__content {
-    width: 44%;
+    width: 30%;
 }
 
 .hero__content::after {
@@ -371,7 +422,7 @@ a {
     rotate: -5deg;
 }
 
-.project-box .project-box::after {
+.project-box::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -579,55 +630,6 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.81;
-}
-
-.review__radio-input {
-    display: flex;
-    margin-top: 40px;
-}
-
-.review-input {
-    appearance: none;
-    /* Xóa mặc định của input */
-    display: block;
-    margin: 10px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px,
-        inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
-    background-color: hsla(0, 0%, 0%, 0.2);
-    background-image: -webkit-radial-gradient(
-        rgb(159, 44, 217) 25%,
-        hsla(305, 71%, 63%, 0.3) 28%,
-        hsla(290, 82%, 33%, 0) 70%
-    );
-    background-repeat: no-repeat;
-    transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1),
-        transform 0.25s cubic-bezier(0.8, 0, 1, 1);
-    outline: none;
-}
-
-.review-input:checked {
-    transition: background-position 0.2s 0.15s cubic-bezier(0, 0, 0.2, 1),
-        transform 0.25s cubic-bezier(0, 0, 0.2, 1);
-    background-position: 0 0;
-}
-
-.review-input:active {
-    transform: scale(1.5);
-    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.review-input,
-.review-input:active {
-    background-position: 0 24px;
-}
-
-.review-input:checked ~ .review-input,
-.review-input:checked ~ .review-input:active {
-    background-position: 0 -24px;
 }
 
 /* Faq */
